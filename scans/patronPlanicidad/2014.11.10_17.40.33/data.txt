@@ -1,0 +1,7 @@
+scan a 29cm (al centro de las camaras)
+
+1208686 points
+0.25mm entre franjas
+
+mean distance: 0.008852
+std deviation: 0.087428

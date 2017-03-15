@@ -1,0 +1,8 @@
+scan a 18cm (al centro de las camaras)
+No enfoca bien la camara, esta muy cerca
+
+1206365 points
+~0.25mm distancia entre franjas
+
+mean distance: 0.004026
+std deviation: 0.077559

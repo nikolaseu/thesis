@@ -1,0 +1,6 @@
+scan a 24cm (al centro de las camaras)
+
+1256469 points
+
+mean distance: 0.000401
+std deviation: 0.057481
