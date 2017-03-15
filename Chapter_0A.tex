@@ -1,0 +1,26 @@
+%********************************************************************
+% Appendix
+%*******************************************************
+% If problems with the headers: get headings in appendix etc. right
+%\markboth{\spacedlowsmallcaps{Appendix}}{\spacedlowsmallcaps{Appendix}}
+\chapter{Fuentes en ruido en cámaras digitales}\label{ch:noiseSourcesDigitalCamera}
+En este apéndice se comentan brevemente las principales fuentes de ruido involucradas durante el proceso de adquisición de imágenes en una cámara digital\footnote{Una explicación mas detallada se encuentra en \url{http://theory.uchicago.edu/~ejm/pix/20d/tests/noise/}}.
+
+\section{Ruido fotónico}
+La luz está compuesta por bloques discretos de energía llamados fotones. Cuanto más intensa es la luz, mayor es la cantidad de fotones por segundo que iluminan la escena. La corriente de fotones tendrá un flujo (fotones por segundo) promedio que incide sobre cierta area del sensor, y se produciran fluctuaciones alrededor de ese valor. Las fluctuaciones en la cantidad de fotones se observan como ruido en la imagen. 
+
+Estas fluctuaciones siguen una distribución de probabilidades conocida como distribución Poisson. Una característica de la distribución Poisson es que el desvío estándar es igual a la raiz cuadrada del valor promedio. Si por ejemplo la cantidad de fotones detectados en promedio es $10000$, la fluctuación típica será de $\pm100$ fotones (el $1\%$). En cambio si el promedio es $100$, la variación será de $\pm10$ (el $10\%$). Por lo tanto, al crecer el número de fotones, también crecerá el ruido fotónico, pero más despacio. Cuanto mayor sea la iluminación, menos aparente es el ruido fotónico; a menor iluminación, más aparente.
+
+\section{Ruido de lectura}
+Los fotones captados por los fotodetectores estimulan la emisión de electrones, uno por cada fotón. Luego de la exposición, los foto-electrones acumulados son convertidos a un voltaje proporcional a la cantidad. Luego este voltaje es amplificado y convertido a una señal digital mediante un conversor analógico-digital. En un mundo ideal, el valor digital debería ser directamente proporcional a la cantidad de fotones. Sin embargo en el mundo real  estos valores no reflejan exactamente la cantidad de fotones. Cada componente del circuito electrónico sufre fluctuaciones en el voltaje que contribuyen a una desviación del valor ideal. Estas fluctuaciones constituyen el ruido de lectura del sensor.
+
+\section{Ruido térmico}
+Los fotodetectores son semiconductores y tienen asociado un ruido intrínseco, inherente a su constitución física, que solo depende de la temperatura absoluta.
+La agitación térmica en un fotodetector puede liberar algunos electrones, y estos electrones son indistinguibles de los electrones liberados por la absorción de fotones, por lo que pueden causar una diferencia en la cuenta de fotones.
+El sensor de la cámara se calienta tanto por la temperatura ambiente como por su propio funcionamiento. 
+
+\section{Respuesta no uniforme del pixel}
+No todos los pixels del sensor tienen exactamente la misma eficiencia en la captura de fotones. Siempre existe una variación en la cantidad de fotones detectados aún cuando no hubiera ruido de lectura, fotónico, etc, debido a la respuesta no uniforme de los pixels.
+
+\section{Error de cuantización}
+El conversor analógico-digital convierte el valor del voltaje del pixel en valores discretos. Debido a esto el valor real y el valor digital tienen una pequeña diferencia. Este error es conocido como error de cuantización y algunas veces también se le llama ruido de cuantización. La magnitud de este ruido es mucho menor que los anteriores.

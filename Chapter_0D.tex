@@ -1,0 +1,179 @@
+%********************************************************************
+% Appendix
+%*******************************************************
+% If problems with the headers: get headings in appendix etc. right
+%\markboth{\spacedlowsmallcaps{Appendix}}{\spacedlowsmallcaps{Appendix}}
+\chapter{Anteproyecto}\label{ch:anteproyecto}
+%En esta sección se incluye el anteproyecto a partir del cual surge este proyecto final de carrera.
+
+\section{Justificación}
+La obtención de modelos tridimensionales precisos y de alta calidad es crucial para un amplio rango de aplicaciones, incluyendo el control para robots inteligentes, la detección de obstáculos para vehículos automáticos, el control de calidad, la ingeniería inversa, entre muchas otras \cite{chen2000overview}. En la industria existe la necesidad de medir con precisión la geometría de diversos objetos para acelerar el desarrollo de productos y asegurar la calidad del proceso de manufactura. Mediante el relevamiento de la geometría de objetos se pueden automatizar tareas como la inspección y el reconocimiento de defectos en la línea de producción.
+
+Debido a su funcionamiento sin contacto, las técnicas de inspección óptica se presentan como una alternativa muy interesante para este tipo de aplicaciones. Si bien diversos métodos ópticos de medición son conocidos hace décadas, desde hace unos años la evolución en las computadoras, dispositivos de obtención de imágenes digitales, componentes electroópticos, láseres y otras fuentes de luz permitieron su aplicación con éxito en diversos ambientes industriales y de consumo masivo.
+
+Existe una gran variedad de técnicas ópticas tridimensionales: triangulación láser, luz estructurada, visión estéreo, fotogrametría, tiempo de vuelo, interferometría, entre otras \cite{sansoni2009state}. Entre ellos se destacan los métodos de luz estructurada y triangulación láser debido a su bajo costo, robustez, flexibilidad, velocidad y principalmente su precisión y resolución \cite{gorthi2010fringe}. Estos métodos se utilizan con éxito para medir elementos a diferentes escalas, partiendo desde pequeños componentes MEMS hasta grandes paneles de hasta 2 metros de largo, chequeo de la geometría de paneles de estampado, medición de deformaciones, análisis de corrosión, etc \footnote{\url{http://www.gom.com/metrology-systems/3d-scanner.html}}\footnote{\url{http://lmi3d.com/products/hdi/}}\footnote{\url{http://lmi3d.com/products/gocator/snapshot-sensor/}}.
+
+Los dispositivos disponibles comercialmente presentan ciertas desventajas, principalmente su poca flexibilidad respecto al rango de medición y distancia de standoff, y el hecho de que son soluciones cerradas. Esto limita considerablemente las posibilidades de adaptación para su uso en situaciones particulares. Como ejemplo, un producto del cual se dispone actualmente (cámara 3D Fotonic $TOFC70E$ \footnote{\url{http://www.fotonic.com/assets/documents/products/Fotonic_C-series.pdf}}), basado en tiempo de vuelo, no logra la precisión deseada (menor a $1$mm) y tampoco resulta suficiente su resolución lateral (genera una imagen en profundidad de sólo $160$x$120$ pixels).
+
+En este proyecto se propone el desarrollo de un dispositivo de medición en tres dimensiones utilizando técnicas de metrología óptica, y evaluar su aplicación para la ubicación y el dimensionamiento de objetos cilíndricos en un ambiente industrial. El desarrollo de un dispositivo a medida brindará la flexibilidad requerida para optimizar el balance entre precisión y rango de medición necesarios y obtener la resolución lateral deseada. Otro beneficio importante es que se tendrá completo control sobre las diversas etapas de la reconstrucción de la geometría en tres dimensiones, y se generará una base tecnológica sólida sobre la cual seguir evolucionando.
+
+\section{Objetivos}
+\subsection{Objetivos generales}
+\begin{itemize}
+\item Desarrollar un dispositivo para detectar la presencia de un objeto cilíndrico en el espacio y determinar con precisión su ubicación y dimensiones.
+\end{itemize}
+
+\subsection{Objetivos específicos}
+\begin{itemize}
+\item Obtener conocimiento sobre técnicas y algoritmos de metrología óptica, luz estructurada, triangulación.
+\item Adquirir conocimientos en los fundamentos de la óptica, la fotografía digital y la geometría computacional aplicables a estos métodos de medición.
+\item Desarrollar un método para facilitar la calibración del sistema.
+\item Estimar la precisión que se puede lograr bajo distintas configuraciones del sistema.
+\end{itemize}
+
+\section{Alcances}
+El proyecto se limita a la investigación, análisis, diseño y desarrollo de un prototipo de un dispositivo de medición en tres dimensiones, incluyendo el software y tecnología de base necesarios para su funcionamiento.
+
+Los objetos que se medirán en las pruebas tendrán geometrías simples (planos, cilindros), y no se busca lograr una reconstrucción más realista del objeto (incluyendo textura, color, material, etc), sino solamente obtener su geometría con precisión. Es importante destacar que el dispositivo no posee limitaciones respecto a geometrías más complejas, pero el uso de objetos simples facilitará el análisis del error y la estimación de la precisión que puede lograr.
+
+Si bien el proyecto surge como posible solución a una problemática real y el prototipo desarrollado servirá para evaluar la factibilidad de su aplicación, queda fuera del alcance del proyecto la instalación del dispositivo en un ambiente industrial. Los objetos a medir se consideran estacionarios. A su vez se excluyen diversos aspectos no relacionados a los objetivos principales del proyecto, como por ejemplo la velocidad de adquisición, el costo de los componentes, el diseño mecánico requerido para ser considerado dispositivo industrial, etc.
+
+\section{Metodología}
+\subsection{Revisión del estado del arte}
+Al iniciar el proyecto se realizará una revisión bibliográfica de los métodos y las tecnologías existentes para el relevamiento de la geometría de objetos en el espacio. Luego se analizarán las distintas opciones disponibles comercialmente, con especial énfasis en la técnica utilizada. Se procederá con una investigación más detallada de los métodos basados en triangulación y luz estructurada, analizando las ventajas y desventajas de cada uno para finalmente justificar la elección de la técnica a utilizar.
+
+\subsection{Armado del prototipo}
+Una vez elegida la técnica se procederá con la elección de los componentes electrónicos necesarios para armar un prototipo del dispositivo. El prototipo deberá brindar suficiente flexibilidad para poder adaptarse y realizar pruebas bajo distintas configuraciones (por ejemplo distintos rangos de medición, distancia de stand off, etc). Luego se analizarán las bibliotecas ofrecidas por los fabricantes de los componentes electrónicos seleccionados (por ejemplo, software de adquisición FlyCapture SDK\footnote{\url{http://ww2.ptgrey.com/sdk/flycap}} para cámaras de Point Grey y Lumenera Camera SDK\footnote{\url{http://www.lumenera.com/support/downloads/industrialdownloads.php}} para cámaras de la misma marca). Se desarrollará el software de adaptación necesario para permitir su utilización en el proyecto, definiendo una interfaz genérica para mantener independencia respecto a los diversos fabricantes.
+
+\subsection{Reconstrucción 3D}
+Se estudiará el funcionamiento de las cámaras digitales y del sistema de lentes, y la manera en que pueden ser modelados, con especial énfasis en los principios matemáticos y los algoritmos que se pueden emplear para realizar la reconstrucción de la geometría 3D a partir de imágenes. Se procederá entonces con la programación de dichos algoritmos y del software necesario para la visualización de los resultados, tanto de las etapas intermedias como de la nube de puntos 3D final.
+
+\subsection{Calibración}
+Se realizará un relevamiento de los métodos de calibración existentes para cada componente (lentes, cámaras digitales, proyector). Luego se estudiarán los posibles métodos para obtener la calibración del sistema completo, funcionando en conjunto, estableciendo las relaciones entre cada elemento del sistema.
+
+Se realizará un análisis de todos los factores involucrados en la reconstrucción de la geometría con el fin de estimar el error que podemos esperar, lo que ayudará a establecer criterios de aceptación para el método de calibración. 
+
+Se procederá entonces con la definición del procedimiento que permitirá obtener la calibración del dispositivo, teniendo en consideración diversos aspectos como la facilidad para el usuario, la flexibilidad respecto a la configuración física utilizada, la facilidad de construcción del patrón de calibración, y el diseño y desarrollo del software requerido para automatizar en gran parte esta tarea.
+
+\subsection{Pruebas y resultados}
+Se realizarán diferentes pruebas para verificar el funcionamiento del sistema y analizar los errores observados. Para el cálculo del error se utilizarán objetos con geometrías simples, y las mediciones se llevarán a cabo sobre parámetros bien establecidos que definen la geometría del objeto, como por ejemplo el radio en un cilindro. También se realizarán pruebas y comparaciones con el mismo objeto pero en diferentes ubicaciones para estudiar el comportamiento del error respecto a variaciones en los parámetros, como por ejemplo la influencia de la distancia entre el objeto observado y el sistema.
+
+Por último se realizará una simple comparación de los resultados obtenidos con el prototipo desarrollado y con otros dispositivos comerciales disponibles.
+
+\subsection{Conclusiones}
+El proyecto finalizará con la obtención de conclusiones y la redacción del informe final.
+
+\section{Plan de trabajo y plan de tareas propuesto}
+\subsection{Etapa 1: (100hs)}
+\begin{enumerate}
+\item Relevamiento de las diferentes técnicas existentes para la obtención de la geometría de objetos en 3D (50hs)
+\item Análisis de dispositivos disponibles comercialmente (10hs)
+\item Selección y justificación de la técnica a utilizar (30hs)
+\item Elección de los elementos necesarios (10hs)
+\end{enumerate}
+
+\subsection{Etapa 2: Desarrollo (200hs)}
+\begin{enumerate}
+\item Diseño y armado del prototipo (20hs)
+\item Diseño y desarrollo del software necesario para la utilización de los componentes electrónicos (50hs)
+\item Estudio e implementación de los algoritmos necesarios para la obtención de la geometría 3D (100hs)
+\item Desarrollo de software básico para la visualización de los resultados (30hs)
+\end{enumerate}
+
+\subsection{Etapa 3: Calibración (240hs)}
+\begin{enumerate}
+\item Relevamiento y análisis de los métodos de calibración utilizados habitualmente (30hs)
+\item Definición del método de calibración (40hs)
+\item Desarrollo del software de calibración (100hs)
+\item Calibración del prototipo (40hs)
+\item Estimación del error (30hs)
+\end{enumerate}
+
+\subsection{Etapa 4: Resultados y comparación (90hs)}
+\begin{enumerate}
+\item Pruebas y obtención de la geometría de diversos objetos (30hs)
+\item Comparación y análisis de los errores (30hs)
+\item Comparación con otros dispositivos (30hs)
+\end{enumerate}
+
+\subsection{Etapa 5: (200hs)}
+\begin{enumerate}
+\item Conclusiones (30hs)
+\item Redacción informe final (170hs)
+\end{enumerate}
+
+\section{Cronograma tentativo de los trabajos}
+\begin{itemize}
+\item Fecha de inicio del proyecto: 01/08/2013
+\item Fecha de finalización del proyecto: 01/08/2014
+\end{itemize}
+
+\definecolor{Gray}{gray}{0.9}
+\begin{table}[!bth] 
+    \myfloatalign
+    \begin{tabularx}{\textwidth}{ X | c | c | c | c | c | c | c | c | c | c | c | c }
+    	& \rotatebox{90}{\shortstack[l]{Agosto}} 
+	& \rotatebox{90}{\shortstack[l]{Septiembre}} 
+	& \rotatebox{90}{\shortstack[l]{Octubre}} 
+	& \rotatebox{90}{\shortstack[l]{Noviembre}} 
+	& \rotatebox{90}{\shortstack[l]{Diciembre}} 
+	& \rotatebox{90}{\shortstack[l]{Enero}} 
+	& \rotatebox{90}{\shortstack[l]{Febrero}} 
+	& \rotatebox{90}{\shortstack[l]{Marzo}} 
+	& \rotatebox{90}{\shortstack[l]{Abril}} 
+	& \rotatebox{90}{\shortstack[l]{Mayo}} 
+	& \rotatebox{90}{\shortstack[l]{Junio}} 
+	& \rotatebox{90}{\shortstack[l]{Julio}} 
+	\\ \hline
+	Etapa 1 & x & x & & & & & & & & & & \\ \hline
+	Etapa 2 & & x & x& x & x & x & x & & & & & \\ \hline
+	Etapa 3 & & & & & x & x & x & x & x & x & & \\ \hline
+	Etapa 4 & & & & & & & & & x & x & x & \\ \hline
+	Etapa 5 & & & & & & & & & & x & x & x \\ \hline
+    \end{tabularx}
+    \caption{Cronograma tentativo de los trabajos}
+    \label{tab:cronograma}
+\end{table}
+
+\section{Puntos de seguimiento y entregables}
+Se planea la entrega de dos informes de avance:
+\begin{itemize}
+\item 01/03/2014: Informe de avance correspondiente a las etapas 1 y 2
+\item 01/07/2014: Informe de avance correspondiente a las etapas 3 y 4
+\end{itemize}
+
+\section{Riesgos y estrategias de mitigación de los mismos}
+\subsection{Problemas con el funcionamiento de los componentes electrónicos}
+La comprensión del funcionamiento e implementación del software usando las bibliotecas y controladores de los distintos componentes electrónicos involucrados puede llevar más tiempo del esperado, e incluso puede llegar a limitar su aplicacion debido a problemas con la instalación o incompatibilidades.
+
+Para reducir la influencia en caso de ocurrir esta situación, se diseñará el software con una estructura modular, con el objetivo de minimizar los cambios requeridos en el caso de necesitar reemplazar el dispositivo por otro de similares características.
+
+\subsection{Problemas de implementación de los algoritmos}
+La comprensión e implementación de los algoritmos, y lograr su correcto funcionamiento puede llegar a ser una tarea muy compleja. La aparición de errores inesperados y la depuración de los algoritmos puede generar demoras importantes.
+
+Para ayudar con la depuración de los algoritmos es fundamental la capacidad de observar los resultados de cada etapa. El desarrollo del software para visualizar los resultados intermedios y la geometría 3D forma parte del proyecto. De esta manera, desde un principio contamos con las herramientas necesarias para observar los posibles errores al momento en que aparecen, reduciendo el tiempo de búsqueda de la fuente del problema.
+
+\section{Recursos necesarios y disponibles}
+Todos los recursos necesarios para el desarrollo del proyecto son provistos por el laboratorio de Fisica Aplicada del Centro de Investigacion Industrial (CINI) de Tenaris Siderca. En concreto, se cuenta con:
+\begin{itemize}
+\item Computadora personal
+\item Camaras digitales, lentes, proyector, laser, y diversas piezas y herramientas para el armado del prototipo
+\item Objetos de prueba
+\end{itemize}
+
+\section{Presupuesto para su ejecución}
+Se estima una duración de 12 meses para la ejecución del proyecto. El presupuesto se calcula utilizando esta estimación. Se toma una vida útil de 5 años para los equipos electrónicos.
+
+\begin{table}[!bth] 
+    \myfloatalign
+    \begin{tabularx}{\textwidth}{ X | c | c | c | c | c }
+    & \rotatebox{90}{\shortstack[l]{Valor\\a nuevo}} & \rotatebox{90}{\shortstack[l]{Vida\\util}} & \rotatebox{90}{\shortstack[l]{Amortización\\mensual}} & \rotatebox{90}{\shortstack[l]{Amortización\\para el proyecto}} & \rotatebox{90}{\shortstack[l]{Valor luego\\del proyecto}} \\ \hline
+    Computadora		& \$10000				& 5 años 	& \$167 	& \$2000 	& \$8000 	\\ \hline
+    Cámara			& U\$D 400 $\approx$ \$3200	& 5 años 	& \$53 	& \$640 	& \$2560 	\\ \hline
+    Lente			& U\$D 316 $\approx$ \$2500	& 5 años 	& \$42 	& \$500 	& \$2000 	\\ \hline
+    Proyector			& U\$D 350 $\approx$ \$2800 	& 5 años 	& \$47 	& \$560	& \$2240 	\\ \hline
+    Herramientas y otros 	& 					& 10 años 	&		&		&  		\\ \hline
+    \end{tabularx}
+    \caption{Presupuesto}
+    \label{tab:presupuesto}
+\end{table}

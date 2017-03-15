@@ -1,0 +1,40 @@
+%************************************************
+\chapter{Conclusiones y trabajos futuros}\label{ch:conclusiones}
+%************************************************
+
+El principal objetivo de este proyecto era el desarrollo de un dispositivo para detectar la presencia de un objeto cilíndrico en el espacio y determinar su ubicación y dimensiones. En este trabajo se realizó una introducción a los métodos ópticos de medición, se explicaron los principios matemáticos involucrados y los detalles del prototipo de luz estructurada desarrollado, incluyendo tanto el hardware como el software que lo acompaña. Luego se presentaron las diversas pruebas realizadas y los resultados obtenidos fueron expuestos.
+En este capítulo se presentan las conclusiones y se sugieren posibles mejoras a futuro.
+
+\section{Conclusiones}
+El armado y la configuración del dispositivo son sencillos. El proceso de calibración propuesto es simple y rápido, y el software desarrollado permite que sea realizado por un usuario inexperto a partir de una serie de instrucciones sencillas.  La arquitectura del software desarrollado junto con los diversos plugins implementados brinda gran flexibilidad respecto a la elección de las cámaras a utilizar, y permite la rápida incorporación de nuevos modelos matemáticos de cámaras junto a sus correspondientes métodos de calibración. El diseño modular permite también una rápida implementación e incorporación de nuevos métodos de luz estructurada.
+
+Los resultados obtenidos muestran que el dispositivo puede realizar mediciones con un error acorde a las expectativas.
+Sin ningún tipo de post procesamiento y con una calibración rápida, los resultados para el objeto plano tienen un error con un desvío estándar menor a los $0.1$mm para todo el rango de medición. Un desvío estándar tan bajo en el caso del objeto plano nos indica que la calibración modela correctamente la distorsión de la lente, y que el error se debe principalmente a la naturaleza discreta del sensor de la cámaras y las imagenes que se obtienen a partir de éste.
+
+Los resultados de las pruebas de dimensionamiento del objeto cilíndrico muestran que se produce un leve sobredimensionamiento del radio del cilindro, del orden de los $0.5$ mm. Este sobredimensionamiento parece ser constante para todo el rango en el que se desplaza el objeto. Los algoritmos de ajuste de círculos a partir de arcos son conocidos por su tendencia a sobre-estimar su radio, como lo explica Berman \cite{berman1989large}. Para confirmar esta situación se debería analizar si el error se reduce cuando utilizamos observaciones de una mayor sección del cilindro, para lo cual deberíamos unir mediciones desde distintos lugares alrededor del eje del objeto. Esta situación no es compatible con el fin práctico del dispositivo, por lo cual no fue considerado y no se realizaron las pruebas.
+
+La detección de la ubicación del cilindro en el espacio presenta un error menor a los $0.2$ mm en un rango de medición de más de $100$ mm, un valor que incluye también el error debido al sobredimensionamiento del cilindro y el posible error en el eje de desplazamiento.
+La dirección del eje del cilindro presenta una variación despreciable, del orden de los $0.06$ °. 
+El error aleatorio observado entre la superficie del cilindro ajustado y la nube de puntos presenta nuevamente un desvío estándar menor a los $0.1$ mm, similar al caso del objeto plano.
+
+La velocidad de medición no era primordial pero incluyendo sincronización por hardware entre las cámaras y el proyector se pueden obtener las imagenes necesarias (y desocupar la pieza) en menos de un segundo si se utilizan cámaras capaces de obtener al menos $20$ imagenes por segundo. El tiempo de procesamiento para la obtención de una nube de puntos de aproximadamente un millon de puntos es inferior a los dos segundos. El software utiliza lookup tables\footnote{Una lookup table es una estructura de datos, normalmente un vector, que se usa para substituir una rutina de computo con una simple indexación de los vectores. Más información en \url{http://en.wikipedia.org/wiki/Lookup_table}} para la calibración (para quitar la distorsión y realizar la transformación desde el sistema de coordenadas de la imagen al sistema de coordenadas de la cámara) y para la proyección al plano único virtual (el de la geometría epipolar), pero los algoritmos de decodificación y reconstrucción aún no fueron paralelizados, por lo que consideramos que el tiempo de procesamiento puede ser reducido aún más.
+
+Los resultados obtenidos son prometedores y alentadores, sabiendo que existen muchas posibilidades para mejorar.
+
+\section{Trabajos futuros}
+Durante el desarrollo de este proyecto se obtuvo una inmensa cantidad de conocimiento y se generó mucha experiencia en relación a los métodos ópticos de medición. La naturaleza acotada del proyecto hizo que muchas ideas queden sin probar, desde simples mejoras de usabilidad/practicidad hasta evidentes posibilidades de mejora en cuanto a la reducción del error. A continuación se mencionan algunas ideas que merecen un análisis mas detallado.
+
+Desde el punto de vista del usuario final se hizo evidente que el proceso de calibración puede ser mucho más práctico. El uso de patrones de calibración con una estructura rectangular que debe ser observada por completo en cada imagen facilita las detección y validación automática del patrón. Sin embargo al momento de obtener las imágenes de calibración se observa que no es cómodo para una sóla persona tener que sostener/ubicar el patrón y al mismo tiempo observar la previsualización de la imágen para conocer si es una imágen de calibración válida, y si es óptima o no. Una posible solución es el uso de patrones de calibración de mayores dimensiones y que sea posible la calibración a partir de imágenes del patrón incompleto. Otro beneficio que se obtendría es la calibración de ambas cámaras a partir de las mismas diversas ubicaciones del patrón. Si además se utiliza un patrón con alguna marca especial que nos permita conocer las coordenadas absolutas de cada punto (recordemos que se plantea la observación parcial del patrón), se pueden utilizar estas mismas imágenes para realizar la calibración extrínseca entre las cámaras. Si bien el método de calibración actual no lleva demasiado tiempo, esta propuesta reduciría aún más el tiempo requerido.
+
+Para mejorar la resolución tanto lateral como en profundidad se puede implementar un método híbrido usando patrones binarios junto a patrones del tipo \emph{phase-shift}. Como se comentó previamente, los patrones binarios solamente brindan información útil en los bordes entre franjas, mientras que los patrones del tipo \emph{phase-shift} aprovechan los efectos de desenfoque de la lente del proyector para permitir el uso de información extra, incluída implícitamente entre una columna de pixels del proyector y la siguiente. Una clara ventaja es la posibilidad de aumentar la resolución, ya que se puede incluir todos los puntos visibles y no solamente los bordes entre franjas. Otra ventaja es el posible incremento en la resolución en profundidad a partir de la obtención de información más detallada respecto a los franjas, la cual podríamos asemejar a la obtención de una resolución subpixel (y no solamente cambios \emph{discretos}, haciendo referencia a la detección del cambio entre una franja y la siguiente en el caso de patrones binarios).
+
+
+%*****************************************
+%*****************************************
+%*****************************************
+%*****************************************
+%*****************************************
+
+
+
+

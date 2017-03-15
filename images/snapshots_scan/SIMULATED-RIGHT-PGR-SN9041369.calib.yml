@@ -1,0 +1,26 @@
+%YAML:1.0
+calibrationDate: "2014-03-03 00:00:00"
+sensorWidth: 1280
+sensorHeight: 960
+cameraMatrix: !!opencv-matrix
+   rows: 3
+   cols: 3
+   dt: d
+   data: [ 2.5269018521173712e+003, 0., 5.3333213968808775e+002, 0.,
+       2.5269018521173712e+003, 4.8885749966752502e+002, 0., 0., 1. ]
+distCoeffs: !!opencv-matrix
+   rows: 1
+   cols: 8
+   dt: d
+   data: [ -3.9871012205971312e-001, 5.4468596756857233e+000, 0., 0., 0.,
+       0., 0., 6.6122375291124769e+001 ]
+rotation: !!opencv-matrix
+   rows: 3
+   cols: 3
+   dt: d
+   data: [ 1., 0., 0., 0., 1., 0., 0., 0., 1. ]
+translation: !!opencv-matrix
+   rows: 3
+   cols: 1
+   dt: d
+   data: [ 0., 0., 0. ]

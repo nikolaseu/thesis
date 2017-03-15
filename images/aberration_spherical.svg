@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Generator: Adobe Illustrator 11 Build 196, SVG Export Plug-In  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd" [
+	<!ENTITY ns_flows "http://ns.adobe.com/Flows/1.0/">
+	<!ENTITY ns_svg "http://www.w3.org/2000/svg">
+	<!ENTITY ns_xlink "http://www.w3.org/1999/xlink">
+]>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/" width="371" height="376" viewBox="-0.526 4.833 371 376" xml:space="preserve">
+	<defs>
+	</defs>
+	<g>
+		<g>
+			<g>
+				<path fill="#D0ECEE" d="M106.474,209.586v170.787c13.106-25.617,20.5-54.642,20.5-85.394      C126.974,264.229,119.58,235.204,106.474,209.586z"/>
+			</g>
+			<g>
+				<path fill="none" stroke="#000000" d="M106.474,209.586v170.787c13.106-25.617,20.5-54.642,20.5-85.394      C126.974,264.229,119.58,235.204,106.474,209.586z"/>
+			</g>
+		</g>
+		<g>
+			<g>
+				<path fill="#D0ECEE" d="M106.474,5.086v170.787c13.106-25.618,20.5-54.642,20.5-85.394S119.58,30.704,106.474,5.086z"/>
+			</g>
+			<g>
+				<path fill="none" stroke="#000000" d="M106.474,5.086v170.787c13.106-25.618,20.5-54.642,20.5-85.394      S119.58,30.704,106.474,5.086z"/>
+			</g>
+		</g>
+		<g>
+			<defs>
+				<rect id="XMLID_2_" width="358.447" height="383"/> 
+			</defs>
+			<clipPath id="XMLID_1_">
+				<use xlink:href="#XMLID_2_"/>
+			</clipPath>
+			<g clip-path="url(#XMLID_1_)">
+				<line fill="none" stroke="#FB0F0C" x1="0.265" y1="294.979" x2="362.765" y2="294.979"/>
+				<g>
+					<line fill="none" stroke="#FB0F0C" x1="0.474" y1="308.029" x2="126.974" y2="308.029"/>
+					<line fill="none" stroke="#FB0F0C" x1="0.474" y1="321.079" x2="124.474" y2="321.079"/>
+					<line fill="none" stroke="#FB0F0C" x1="0.474" y1="347.18" x2="119.474" y2="347.18"/>
+					<line fill="none" stroke="#FB0F0C" x1="0.474" y1="360.229" x2="114.474" y2="360.229"/>
+					<line fill="none" stroke="#FB0F0C" x1="0.474" y1="334.13" x2="122.474" y2="334.13"/>
+					<line fill="none" stroke="#FB0F0C" x1="126.718" y1="308.029" x2="363.265" y2="291"/>
+					<line fill="none" stroke="#FB0F0C" x1="124.957" y1="321.079" x2="363.765" y2="283.5"/>
+					<line fill="none" stroke="#FB0F0C" x1="119.522" y1="347.18" x2="364.265" y2="251"/>
+					<line fill="none" stroke="#FB0F0C" x1="114.848" y1="360.229" x2="369.265" y2="221.5"/>
+					<line fill="none" stroke="#FB0F0C" x1="122.305" y1="334.13" x2="363.765" y2="270.5"/>
+				</g>
+				<g>
+					<line fill="none" stroke="#FB0F0C" x1="0.265" y1="281.701" x2="126.765" y2="281.701"/>
+					<line fill="none" stroke="#FB0F0C" x1="0.265" y1="268.651" x2="124.265" y2="268.651"/>
+					<line fill="none" stroke="#FB0F0C" x1="0.265" y1="242.551" x2="119.265" y2="242.551"/>
+					<line fill="none" stroke="#FB0F0C" x1="0.265" y1="229.501" x2="114.265" y2="229.501"/>
+					<line fill="none" stroke="#FB0F0C" x1="0.265" y1="255.601" x2="122.265" y2="255.601"/>
+					<line fill="none" stroke="#FB0F0C" x1="126.509" y1="281.701" x2="363.056" y2="298.73"/>
+					<line fill="none" stroke="#FB0F0C" x1="124.749" y1="268.651" x2="363.556" y2="306.23"/>
+					<line fill="none" stroke="#FB0F0C" x1="119.313" y1="242.551" x2="364.056" y2="338.73"/>
+					<line fill="none" stroke="#FB0F0C" x1="114.64" y1="229.501" x2="369.056" y2="368.23"/>
+					<line fill="none" stroke="#FB0F0C" x1="122.096" y1="255.601" x2="363.556" y2="319.23"/>
+				</g>
+			</g>
+			<line clip-path="url(#XMLID_1_)" fill="none" stroke="#FB0F0C" x1="0.265" y1="90.479" x2="362.765" y2="90.479"/>
+			<g clip-path="url(#XMLID_1_)">
+				<line fill="none" stroke="#FB0F0C" x1="0.474" y1="103.529" x2="126.974" y2="103.529"/>
+				<line fill="none" stroke="#FB0F0C" x1="0.474" y1="116.579" x2="124.474" y2="116.579"/>
+				<line fill="none" stroke="#FB0F0C" x1="0.474" y1="142.68" x2="119.474" y2="142.68"/>
+				<line fill="none" stroke="#FB0F0C" x1="0.474" y1="155.729" x2="114.474" y2="155.729"/>
+				<line fill="none" stroke="#FB0F0C" x1="0.474" y1="129.63" x2="122.474" y2="129.63"/>
+				<line fill="none" stroke="#FB0F0C" x1="126.718" y1="103.529" x2="363.724" y2="86.75"/>
+				<line fill="none" stroke="#FB0F0C" x1="124.957" y1="116.579" x2="363.974" y2="83"/>
+				<line fill="none" stroke="#FB0F0C" x1="119.522" y1="142.68" x2="363.224" y2="76.25"/>
+				<line fill="none" stroke="#FB0F0C" x1="114.849" y1="155.729" x2="360.224" y2="74.25"/>
+				<line fill="none" stroke="#FB0F0C" x1="122.305" y1="129.63" x2="365.224" y2="79.25"/>
+			</g>
+			<line clip-path="url(#XMLID_1_)" fill="none" stroke="#FB0F0C" x1="0.265" y1="77.201" x2="126.765" y2="77.201"/>
+			<line clip-path="url(#XMLID_1_)" fill="none" stroke="#FB0F0C" x1="0.265" y1="64.151" x2="124.265" y2="64.151"/>
+			<line clip-path="url(#XMLID_1_)" fill="none" stroke="#FB0F0C" x1="0.265" y1="38.051" x2="119.265" y2="38.051"/>
+			<line clip-path="url(#XMLID_1_)" fill="none" stroke="#FB0F0C" x1="0.265" y1="25.001" x2="114.265" y2="25.001"/>
+			<line clip-path="url(#XMLID_1_)" fill="none" stroke="#FB0F0C" x1="0.265" y1="51.101" x2="122.265" y2="51.101"/>
+			<line clip-path="url(#XMLID_1_)" fill="none" stroke="#FB0F0C" x1="126.509" y1="77.201" x2="363.056" y2="94.23"/>
+			<line clip-path="url(#XMLID_1_)" fill="none" stroke="#FB0F0C" x1="124.749" y1="64.151" x2="363.224" y2="98"/>
+			<line clip-path="url(#XMLID_1_)" fill="none" stroke="#FB0F0C" x1="119.313" y1="38.051" x2="364.974" y2="105.5"/>
+			<line clip-path="url(#XMLID_1_)" fill="none" stroke="#FB0F0C" x1="114.64" y1="25.001" x2="360.224" y2="107"/>
+			<line clip-path="url(#XMLID_1_)" fill="none" stroke="#FB0F0C" x1="122.097" y1="51.101" x2="364.224" y2="101.75"/>
+		</g>
+	</g>
+</svg>

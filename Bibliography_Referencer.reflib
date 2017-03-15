@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<library>
+	<manage_target braces="false" utf8="false"></manage_target>
+	<library_folder monitor="false"></library_folder>
+	<taglist/>
+	<doclist>
+		<doc>
+			<filename></filename>
+			<key>bentley:1999</key>
+			<notes></notes>
+			<bib_type>Book</bib_type>
+			<bib_doi></bib_doi>
+			<bib_title>Programming Pearls</bib_title>
+			<bib_authors>Bentley, Jon</bib_authors>
+			<bib_journal></bib_journal>
+			<bib_volume></bib_volume>
+			<bib_number></bib_number>
+			<bib_pages></bib_pages>
+			<bib_year>1999</bib_year>
+			<bib_extra key="Address">Boston, MA, USA</bib_extra>
+			<bib_extra key="Edition">2nd</bib_extra>
+			<bib_extra key="Publisher">Addison–Wesley</bib_extra>
+			<bib_extra key="Series"></bib_extra>
+		</doc>
+		<doc>
+			<filename></filename>
+			<key>bringhurst:2002</key>
+			<notes></notes>
+			<bib_type>Book</bib_type>
+			<bib_doi></bib_doi>
+			<bib_title>The Elements of Typographic Style</bib_title>
+			<bib_authors>Bringhurst, Robert</bib_authors>
+			<bib_journal></bib_journal>
+			<bib_volume></bib_volume>
+			<bib_number></bib_number>
+			<bib_pages></bib_pages>
+			<bib_year>2008</bib_year>
+			<bib_extra key="Address">Point Roberts, WA, USA</bib_extra>
+			<bib_extra key="Publisher">Hartley &amp; Marks Publishers</bib_extra>
+			<bib_extra key="Series">Version 3.2</bib_extra>
+		</doc>
+		<doc>
+			<filename></filename>
+			<key>cormen:2001</key>
+			<notes></notes>
+			<bib_type>Book</bib_type>
+			<bib_doi></bib_doi>
+			<bib_title>Introduction to Algorithms</bib_title>
+			<bib_authors>Cormen, Thomas H. and Leiserson, Charles E. and Rivest, Ronald L. and Stein, Clifford</bib_authors>
+			<bib_journal></bib_journal>
+			<bib_volume></bib_volume>
+			<bib_number></bib_number>
+			<bib_pages></bib_pages>
+			<bib_year>2001</bib_year>
+			<bib_extra key="Address">Cambridge, MA, USA</bib_extra>
+			<bib_extra key="Edition">2nd</bib_extra>
+			<bib_extra key="Publisher">The MIT Press</bib_extra>
+			<bib_extra key="Series"></bib_extra>
+		</doc>
+		<doc>
+			<filename></filename>
+			<key>dueck:trio</key>
+			<notes></notes>
+			<bib_type>Book</bib_type>
+			<bib_doi></bib_doi>
+			<bib_title>Dueck’s Trilogie: Omnisophie – Supramanie – Topothesie</bib_title>
+			<bib_authors>Dueck, Gunter</bib_authors>
+			<bib_journal></bib_journal>
+			<bib_volume></bib_volume>
+			<bib_number></bib_number>
+			<bib_pages></bib_pages>
+			<bib_year>2005</bib_year>
+			<bib_extra key="Note">http://www.omnisophie.com</bib_extra>
+			<bib_extra key="Publisher">Springer, Berlin</bib_extra>
+			<bib_extra key="Series"></bib_extra>
+		</doc>
+		<doc>
+			<filename></filename>
+			<key>knuth:1976</key>
+			<notes></notes>
+			<bib_type>Article</bib_type>
+			<bib_doi></bib_doi>
+			<bib_title>Big Omicron and Big Omega and Big Theta</bib_title>
+			<bib_authors>Knuth, Donald E.</bib_authors>
+			<bib_journal>SIGACT News</bib_journal>
+			<bib_volume>8</bib_volume>
+			<bib_number>2</bib_number>
+			<bib_pages>18-24</bib_pages>
+			<bib_year>1976</bib_year>
+			<bib_extra key="Address">New York, NY, USA</bib_extra>
+			<bib_extra key="Month">April/June</bib_extra>
+			<bib_extra key="Publisher">ACM Press</bib_extra>
+		</doc>
+		<doc>
+			<filename></filename>
+			<key>knuth:1974</key>
+			<notes></notes>
+			<bib_type>Article</bib_type>
+			<bib_doi></bib_doi>
+			<bib_title>Computer Programming as an Art</bib_title>
+			<bib_authors>Knuth, Donald E.</bib_authors>
+			<bib_journal>Communications of the ACM</bib_journal>
+			<bib_volume>17</bib_volume>
+			<bib_number>12</bib_number>
+			<bib_pages>667-673</bib_pages>
+			<bib_year>1974</bib_year>
+			<bib_extra key="Address">New York, NY, USA</bib_extra>
+			<bib_extra key="Month">December </bib_extra>
+			<bib_extra key="Publisher">ACM Press</bib_extra>
+		</doc>
+		<doc>
+			<filename></filename>
+			<key>sommerville:1992</key>
+			<notes></notes>
+			<bib_type>Book</bib_type>
+			<bib_doi></bib_doi>
+			<bib_title>Software Engineering</bib_title>
+			<bib_authors>Sommerville, Ian</bib_authors>
+			<bib_journal></bib_journal>
+			<bib_volume></bib_volume>
+			<bib_number></bib_number>
+			<bib_pages></bib_pages>
+			<bib_year>1992</bib_year>
+			<bib_extra key="Address">Boston, MA, USA</bib_extra>
+			<bib_extra key="Edition">4th</bib_extra>
+			<bib_extra key="Publisher">Addison-Wesley</bib_extra>
+			<bib_extra key="Series"></bib_extra>
+		</doc>
+	</doclist>
+</library>
